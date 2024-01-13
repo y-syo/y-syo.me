@@ -7,5 +7,11 @@ pre, code { font-family: Hack, monospace; }
 	margin:0;
 	padding:0;
 	font-family: 'Hack';
-	background-color: #1e1e2e;
+	background-color: #282828;
+}
+
+.image {
+	position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
