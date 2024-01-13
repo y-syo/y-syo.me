@@ -1,38 +1,11 @@
-@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+@import url(https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css);
+@import url(https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css);
+
+pre, code { font-family: Hack, monospace; }
 
 * {
 	margin:0;
 	padding:0;
-	font-family: "Fira Code", monospace;
-}
-
-.header-content {
-	background-color: #16161D;
-	color: #DCD7BA;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 25px;
-	font-weight: 700;
-}
-
-.header-content-pdp {
-	border-radius: 100px;
-	border: 5px solid #54546D;
-	box-shadow: 0px 0px 75px 4px #54546DEE;
-	margin-bottom: 35px;
-}
-
-.content {
-	background-color: #1F1F28;
-	color: #DCD7BA;
-}
-
-.nyanners {
-	padding-top: 35px;
-}
-
-.content h1 {
-	text-align: center;
-	padding-top: 35px;
-	padding-bottom: 70px;
+	font-family: 'Hack';
+	background-color: #1e1e2e;
 }
