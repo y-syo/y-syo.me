@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+:root {
+	/* Ayu inspired */
+	--background: #0B0E14;
+	--foreground: #F8F8F2;
+	--red: #E93B3B;
+	--orange: #FF8F40;
+	--yellow: #FFD754;
+	--green: #8CD866;
+	--blue: #54A5F7;
+	--purple: #AE6ED8;
+}
+
+.color-red {
+	color: var(--red);
+}
+.color-orange {
+	color: var(--orange);
+}
+.color-yellow {
+	color: var(--yellow);
+}
+.color-green {
+	color: var(--green);
+}
+.color-blue {
+	color: var(--blue);
+}
+.color-purple {
+	color: var(--purple);
+}
+
+body {
+	margin: 0;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: "Reddit Mono", sans-serif, monospace;
+	font-weight: 400;
+}
+
+#bg {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+
+a {
+	color: var(--red);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover, a:active {
+	color: var(--orange);
+	text-decoration: underline;
+}
+
+img {
+	object-fit: contain;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#header {
+	padding-top: 7vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	font-size: 1.6em;
+	color: #F8F8F2;
+	height: 100vh;
+}
+
+#header h1 {
+	font-size: 10vh;
+	line-height: 11vh;
+	margin: 2vh;
+	margin-top: 5vh;
+}
+
+.subtitle {
+	display: flex;
+	flex-direction: row;
+}
+
+#header p {
+	text-align: left;
+}
+
+.cursor {
+	animation: blinking 1s steps(1, end) infinite;
+}
+
+@keyframes blinking {
+	0% {
+		background-color: var(--background);
+		color: var(--background);
+		opacity: 0;
+	}
+	50% {
+		background-color: var(--foreground);
+		color: var(--foreground);
+		opacity: 1;
+	}
+	100% {
+		background-color: var(--background);
+		color: var(--background);
+		opacity: 0;
+	}
+}
+
+#key-art {
+	max-height: 9em;
+	max-width: 9em;
+	border-radius: 50%;
+	border: 5px solid var(--red);
+	/*filter: drop-shadow(0 0 0.5rem #000000a0);*/
+	margin: 4vh 6vh 6vh;
+	align-self: center;
+}
+
+#header nav a {
+	margin: 0 1em;
+}
+
+#about {
+	padding: 2em;
+	background: rgba(15, 15, 15, .77);
+	font-size: 1.1em;
+}
+
+#about h1 {
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+}
+
+.text-container {
+	max-width: 800px;
+	margin: 0 auto;
+	line-height: 1.75;
+}
+
+.text-container h1 {
+	line-height: 1;
+}
+
+#footer {
+	width: 100vw;
+	padding: 1em 0em;
+	background: rgba(0, 0, 0, .80);
+}
+#footer p {
+	padding: 0em 2em;
+}
