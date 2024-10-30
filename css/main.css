@@ -3,6 +3,7 @@
 
 .hieroglyph {
 	font-family: "Noto Sans Egyptian Hieroglyphs";
+	font-size: 0.8em;
 }
 
 :root {
@@ -36,14 +37,26 @@
 	color: var(--purple);
 }
 
+@keyframes bganim {
+  from {background-position: top left;}
+  to {background-position: bottom right;}
+}
+
 body {
 	margin: 0;
 	background-image: url("../res/bg.png");
-	background-size: cover;
+	background-size: 50vw 50vh;
 	background-attachment: fixed;
+	animation: bganim 60s linear infinite;
 	color: var(--foreground);
 	font-family: "Reddit Mono", sans-serif, monospace;
 	font-weight: 400;
+}
+
+@media (max-width: 768px) {
+	body {
+		background-size: 100vw 50vh;
+	}
 }
 
 a {
