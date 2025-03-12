@@ -135,7 +135,9 @@ img {
 	max-height: 9em;
 	max-width: 9em;
 	border-radius: 50%;
-	border: 5px solid var(--red);
+	border: 5px solid transparent;
+	background: linear-gradient(white, white) padding-box, linear-gradient(rgba(91,206,250,1) 0%, rgba(91,206,250,1) 20%, rgba(245,169,184,1) 20%, rgba(245,169,184,1) 40%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(245,169,184,1) 60%, rgba(245,169,184,1) 80%, rgba(91,206,250,1) 80%) border-box;
+
 	/*filter: drop-shadow(0 0 0.5rem #000000a0);*/
 	margin: 4vh 6vh 12vh;
 	align-self: center;
