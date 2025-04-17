@@ -106,6 +106,7 @@ body {
 	position: absolute;
 	min-height: 200px;
 	background: var(--base01);
+	border-radius: 5px;
 	border: 2px solid var(--base00);
 	/*border-top-color: var(--base03);
 	border-left-color: var(--base03);
@@ -115,6 +116,7 @@ body {
 
 .window-titlebar {
 	margin: 2px;
+	border-radius: 3px;
 	background: linear-gradient(270deg, var(--base09) 0%, var(--base0F) 100%);
 	color: var(--base07);
 	text-shadow: 1px 1px black;
