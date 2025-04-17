@@ -2,29 +2,67 @@
 
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<title>yosyo's website :D</title>
+	<title>yosyo</title>
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<div class="fullpage" id="header">
-		<h1>yosyo <span class="hieroglyph">𓅱</span></h1>
-		<div class="subtitle">
-			<img src="res/p.png" id="key-art">
-			<p>
-			> <span class="color-green"> dev student at 42 school</span><br><br>
-			> <span class="color-blue">nixos user :D</span><br><br>
-			> <span class="color-purple">musician/compositor ig</span><br><br>
-			> <span class="color-yellow">i am very normal</span><br><br>
-			> ✨💜<span class="cursor">.</span>
-			</p>
+	<script src="scripts/oneko.js"></script>
+	<script src="scripts/prideflag.js"></script>
+	<script src="scripts/main.js"></script>
+	<div id="content">
+
+		<div class="window" style="width: 727px;">
+			<div class="window-titlebar">🪐 nawel
+			<div class="window-titlebuttons">
+					<button class="window-titlebtn minimize">-</button><button class="window-titlebtn maximize">□</button><button class="window-titlebtn">×</button></div>
+			</div>
+
+			<div class="window-body">
+				<div class="window-maincontent">
+				<img src="https://media1.tenor.com/m/i-EHxKJYStIAAAAC/james-wilson-house.gif" width="697" height="170">
+				</div>
+
+				<fieldset class="window-fieldset">
+				<legend><menu role="tablist" class="window-tablist">
+					<button class="window-tablist-button">about</button>
+					<button class="window-tablist-button">music</button>
+					<button class="window-tablist-button">stalk me</button>
+					<button class="window-tablist-button">contact</button>
+				</menu></legend>
+
+
+
+				<div id="about" class="window-menuarticle">
+					<span class="window-labels">🏳️‍⚧️transfem</span><span class="window-labels">✨ she/they</span><span class="window-labels">🧡🪐 silly</span>
+					<p>
+							helo ! i'm nawel, but you can call me yosyo !</br>
+							i'm a <b><span class="t-blue">fr</span><span class="t-white">en</span><span class="t-red">ch</span></b> musician and a developer trying to have fun on the internet by doing silly things :D</br>
+							</br>
+							i'm a student from 42 school - their way of teaching things is really cool i love it !!</br>
+							i love playing video games, i think my favorites are the yakuza series, the mario kart games and a hat in time (been speedrunning that one). i'm also a huuuuge fan of fromsoft games and anything souls-like !</br>
+							</br>
+							don't get confused tho, i am three racoons in a trenchcoat who will rob you >:D</br>
+							anyways, have fun browsing this website to discover more about me and what i do !!
+					</p>
+				</div>
+
+				<div id="music" hidden="" class="window-menuarticle">
+						too lazy rn so in meantime take that
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/hsP6riUaebw?si=fSYsyX3Iqg9DRhxg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+				<div id="stalk me" hidden="" class="window-menuarticle">
+					<nav>
+						<a href="https://bsky.app/profile/y-syo.me">bluesky</a>
+						<a href="https://github.com/y-syo">github</a>
+						<a href="https://soundcloud.com/yosyo">soundcloud</a>
+					</nav>
+				</div>
+				</fieldset>
+			</div>
 		</div>
-		<nav>
-			<!--a href="https://bsky.app/profile/y-syo.me">bluesky</a-->
-			<a href="https://github.com/y-syo">github</a>
-			<a href="https://soundcloud.com/yosyo">soundcloud</a>
-		</nav>
 	</div>
 
 	<!--div id="about">
@@ -39,13 +77,30 @@
 		</div>
 	</div-->
 
-	<footer id="footer">
-		<p>
-			you can find the source code <a href="https://github.com/y-syo/y-syo.me">right here</a> !
-		</p>
-		<p>
-			copyright © 2024 - yosyo - no rights reserved.
-		</p>
-	</footer>
+	<div id="taskbar">
+		<a class="taskbar-button"><b>🪐 Start</b></a>
+		<span class="taskbar-separator"></span>
+		<a class="taskbar-button" href="https://yael.moussouni.fr">❤︎ my really cool brother</a>
+		<a class="taskbar-button" href="https://github.com/y-syo/y-syo.me"> source code</a>
+		<span id="taskbar-clock" class="taskbar-clock"></span>
+	</div>
+
+<script>
+function updateClock()
+{
+	const clock = document.getElementById("taskbar-clock");
+	const now = new Date();
+	let hours = now.getHours();
+	let minutes = now.getMinutes();
+
+	hours = hours < 10 ? "0" + hours : hours;
+	minutes = minutes < 10 ? "0" + minutes : minutes;
+
+	clock.textContent = hours + ":" + minutes;
+}
+
+setInterval(updateClock, 5000);
+updateClock();
+</script>
 </body>
 </html>
