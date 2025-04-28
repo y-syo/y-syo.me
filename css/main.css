@@ -102,10 +102,27 @@ body {
 	width: 100%;
 }
 
+a:link {
+	color: var(--base0D);
+}
+
+a:visited {
+	color: var(--base0C);
+}
+
+a:hover {
+	color: var(--base0E);
+}
+
+a:active {
+	color: var(--base0E);
+}
+
 .window {
 	position: absolute;
 	min-height: 200px;
 	background: var(--base01);
+	border-radius: 5px;
 	border: 2px solid var(--base00);
 	/*border-top-color: var(--base03);
 	border-left-color: var(--base03);
@@ -115,6 +132,7 @@ body {
 
 .window-titlebar {
 	margin: 2px;
+	border-radius: 3px;
 	background: linear-gradient(270deg, var(--base09) 0%, var(--base0F) 100%);
 	color: var(--base07);
 	text-shadow: 1px 1px black;
@@ -166,6 +184,7 @@ body {
 	padding-top: 2px;
 }
 
+	box-shadow: -2px 4px rgba(0, 0, 0, 0.5);
 .window-titlebtn:hover {
 	background-color: var(--base03);
 }
@@ -232,21 +251,26 @@ body {
 	background-color: var(--base03);
 
 	border-radius: 5px;
+
+	box-shadow: -2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #taskbar {
 	position: fixed;
-	bottom: 0;
+	bottom: 1%;
 	left: 1%;
 	width: 98%;
 	padding-top: 6px;
 	padding-bottom: 5px;
 	
 	background: var(--base02);
-	border-top: 2px solid var(--base03);
+	border: 2px solid var(--base03);
+	border-radius: 5px;
 	font-size: 14px;
 	color: var(--base07);
 	text-decoration: none;
+	align-items: center;
+	justify-content: center;
 }
 
 #taskbar .taskbar-separator {
@@ -258,28 +282,20 @@ body {
 	margin: 0 0px;
 }
 
-#taskbar a:hover, #taskbar a:active {
-	color: var(--red);
-	text-decoration: underline;
+#taskbar .taskbar-button {
+	border: 2px solid var(--base03);
+	border-radius: 3px;
+	padding: 2px 5px;
+	margin-left: 3px;
 }
 
-#taskbar .taskbar-button {
-	background: var(--base03);
-	border: 2px solid var(--base00);
-	border-top-color: var(--base04);
-	border-left-color: var(--base04);
-	border-right-color: var(--base00);
-	border-bottom-color: var(--base00);
-	padding: 2px 5px;
-	margin-left: 2px;
+#taskbar .taskbar-button:hover {
+	background-color: var(--base03);
+	cursor: pointer;
 }
 
 #taskbar .taskbar-button:active {
-	border: 2px solid var(--base00);
-	border-top-color: var(--base04);
-	border-left-color: var(--base04);
-	border-right-color: var(--base05);
-	border-bottom-color: var(--base05);
+	border: 2px solid var(--base04);
 }
 
 #taskbar .taskbar-clock {
@@ -290,4 +306,5 @@ body {
 	text-align: center;
 
 	border: 1px solid var(--base03);
+	border-radius: 3px;
 }
