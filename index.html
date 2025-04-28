@@ -49,7 +49,7 @@
 						anyways, have fun browsing this website to discover more about me and what i do !! love you guyz <3</br>
 						(yes there aren't a billion things, but I'm doing my best :c )</br>
 						</br>
-						<a href="https://www.mariowiki.com/Gallery:Daisy" target="_blank">very important btw</a>
+						<a href="https://www.mariowiki.com/Gallery:Daisy" target="_blank">very important</a>
 					</p>
 				</div>
 
@@ -72,8 +72,8 @@
 
 				<div id="contact" hidden="" class="window-menuarticle">
 					<b>yosyo</b></br>
-						Étudiante à l'école 42 en développement informatique</br>
-						Student at 42 school in computer science</br>
+						étudiante à l'école 42 en développement informatique</br>
+						student at 42 school in computer science</br>
 						</br>
 					<u>to contact me:</u></br>
 						personal email: <a href="mailto:contact@y-syo.me" target="_blank"> contact@y-syo.me</a></br>
@@ -85,7 +85,7 @@
 	</div>
 
 	<div id="taskbar">
-		<a class="taskbar-button"><b style="user-select: none;">🪐 Start</b></a>
+		<a class="taskbar-button"><b style="user-select: none;">🪐 start</b></a>
 		<span class="taskbar-separator"></span>
 		<a class="taskbar-button" href="https://yael.moussouni.fr">🧡 my goated brother's website</a>
 		<a class="taskbar-button" href="https://github.com/y-syo/y-syo.me">🔧 source code</a>
@@ -95,6 +95,8 @@
 <script>
 function updateClock()
 {
+	const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+	const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 	const clock = document.getElementById("taskbar-clock");
 	const now = new Date();
 	let hours = now.getHours();
@@ -103,7 +105,7 @@ function updateClock()
 	hours = hours < 10 ? "0" + hours : hours;
 	minutes = minutes < 10 ? "0" + minutes : minutes;
 
-	clock.textContent = hours + ":" + minutes;
+	clock.textContent = `${days[now.getDay()]} ${now.getDate()} ${months[now.getMonth()]} ` + hours + ":" + minutes;
 }
 
 setInterval(updateClock, 5000);
