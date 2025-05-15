@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		"https://media1.tenor.com/m/v8nb7KZ2L7sAAAAd/michiru-kagemori-michiru.gif",
 		"https://media1.tenor.com/m/3lAgnX3yF5QAAAAd/mizuki-akiyama.gif",
 		"https://media1.tenor.com/m/9zaRzkks96oAAAAd/nene-kusanagi-nene-pjsk.gif",
-		"https://media1.tenor.com/m/PE5ruuKARBIAAAAd/anime-love-live.gif"
+		"https://media1.tenor.com/m/PE5ruuKARBIAAAAd/anime-love-live.gif",
+		"https://media1.tenor.com/m/THTwDQDdySUAAAAd/metal-gear-rising-mgr.gif",
+		"https://media1.tenor.com/m/1I5obsxqmOAAAAAd/may-guilty-gear-may-pipe-bomb.gif"
 	];
 	const randomIndex = Math.floor(Math.random() * images.length);
 	document.getElementById('image-maincontent').src = images[randomIndex];
